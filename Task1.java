@@ -13,7 +13,16 @@ public class Task1 {
         int sub4 = sc.nextInt();
         int sub5 = sc.nextInt();
 
-        int sum = sub1 + sub2 + sub3 + sub4 + sub5 ;
-        System.out.println(sum);
+        int totalMarks = 500;
+
+        int obtainMarks = sub1 + sub2 + sub3 + sub4 + sub5 ; 
+
+        float percentage = (obtainMarks  * 100)  /totalMarks;
+
+        System.out.println("Total marks of  5 Number Is " + obtainMarks);
+        System.out.println("The Percentage of These Numbers "+percentage);
+        
+        
+        sc.close();
     }
 }
